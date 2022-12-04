@@ -24,23 +24,24 @@
 
 <body>
 
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Navigation Bar -->
-  <div class="nav-bar">
-    <a href="active" href="#home">Home</a>
+  <div class="nav-bar" id="nav-bar">
+    <a href="#home" class="active">Home</a>
     <a href="#notes">Notes</a>
-    <a href="Tasks">Tasks</a>
-    <a href="Pomodoro">Pomodoro</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#pomodoro">Pomodoro</a>
+    <a href="javascript:void(0)" class="icon" onclick="expandNavBar()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <button class="button nav-buttons">Home</button>
-  <button class="button nav-buttons">Notes</button>
-  <button class="button nav-buttons">Tasks</button>
-  <button class="button nav-buttons">Pomodoro</button>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
