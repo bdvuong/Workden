@@ -1,26 +1,3 @@
-/* Toggle between adding and removing the "responsive" class to the nav-bar when the user clicks on the icon */
-function expandNavBar() {
-  let x = document.getElementById("nav-bar");
-  if(x.className === "nav-bar") {
-    x.className += " responsive";
-  }
-  else {
-    x.className = "nav-bar";
-  }
-}
-
-/**
- * Loads an element from a HTML file
- * @param element name of the file that is to be loaded
- */
-async function load(element) {
-  let doc = document.getElementById("content");
-  doc.innerHTML = await (await fetch(element)).text();
-}
-
-/* ==========================================================================
-   Pomodoro Timer
-   ========================================================================== */
 const buttonSound = new Audio('audio/button-sound.mp3');
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
@@ -177,8 +154,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   switchMode('pomodoro');
 });
-
-/*
-  Calendar
- */
-

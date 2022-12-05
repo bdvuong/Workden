@@ -19,25 +19,40 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Add the evo-calendar.css for styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
+
+  <!-- Add jQuery library (required) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <!-- Add the evo-calendar.js for.. obviously, functionality! -->
+  <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Navigation Bar -->
-  <div class="nav-bar" id="nav-bar">
-    <a href="#home" class="active">Home</a>
-    <a href="#notes">Notes</a>
-    <a href="#tasks">Tasks</a>
-    <a href="#pomodoro">Pomodoro</a>
-    <a href="javascript:void(0)" class="icon" onclick="expandNavBar()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+<!-- Navigation Bar -->
+<div class="nav-bar" id="nav-bar">
+  <a href="index.html">Home</a>
+  <a href="notes.html" >Notes</a>
+  <a href="tasks.html" >Tasks</a>
+  <a href="pomodoro.html" class="active">Pomodoro</a>
+  <a href="javascript:void(0)" class="icon" onclick="expandNavBar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+
+<div class="calendar_container"></div>
+<div id="calendar"></div>
+<script>
+  $("#calendar").evoCalendar();
+</script>
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
