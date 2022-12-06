@@ -1,3 +1,5 @@
+import jqueryui from 'jquery-ui'
+
 /* Toggle between adding and removing the "responsive" class to the nav-bar when the user clicks on the icon */
 function expandNavBar() {
   let x = document.getElementById("nav-bar");
@@ -17,6 +19,10 @@ async function load(element) {
   let doc = document.getElementById("content");
   doc.innerHTML = await (await fetch(element)).text();
 }
+
+/* ==========================================================================
+   Calendar
+   ========================================================================== */
 
 /* ==========================================================================
    Pomodoro Timer

@@ -111,8 +111,8 @@ textarea {
 
 /* Add active class to highlight current page */
 .nav-bar a:active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #ffffff;
+  color: black;
 }
 
 /* Hide the hamburger button that appears on small screens */
